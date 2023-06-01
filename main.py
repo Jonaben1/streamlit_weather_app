@@ -16,7 +16,7 @@ if st.button('Fetch'):
     df = pd.DataFrame()
     for day in forecast.get_series(['temp', 'precip', 'weather','wind_spd' ,'datetime']):
         df['Date'] = day['datetime'].date()
-        df['Temp °C'] =  day['temp']
+        df['Temp (°C)'] =  day['temp']
         df['Wind Speed'] = day['wind_spd']
         df['Precip'] = day['precip']
         df['Weather'] = day['weather']['description']
