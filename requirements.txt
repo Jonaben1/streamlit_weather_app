@@ -1,4 +1,4 @@
-pyowm
+weatherbit
 streamlit
 pandas
 
